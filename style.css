@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.name {
+  text-align: start;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  color: white;
+}
+
+.hi {
+  color: white;
+  font-size: 1.8rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+.description{
+  margin-top: 10px;
+  text-align: start;
+  color: #f0f4f8;
+  font-size: 20px;
+}
+span {
+  color: rgb(255, 147, 5);
+  
+
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: rgba(245, 245, 220, 0.991);
+  flex-wrap: wrap;
+  padding: 10px 20px;
+
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  margin: 0;
+}
+
+.navbar li {
+  list-style: none;
+  padding: 10px;
+  margin: 5px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a:hover {
+  color: blue;
+}
+
+.about_header h1 {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  gap: 12px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.Me {
+  color: rgb(255, 13, 0);
+}
+
+.About {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.about_image {
+  height: 2.5rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.Image_Dp {
+  width: 90%;
+  max-width: 300px;
+  margin: 20px auto;
+  height: auto;
+  border-radius: 30px;
+  box-shadow: 8px 5px 10px 0 rgb(255, 0, 21);
+}
+
+.Image_Dp:hover {
+  cursor: pointer;
+  transition: 2s;
+  box-shadow: 5px 5px 20px rgba(55, 0, 255, 0.96);
+}
+
+.Box_1 {
+  margin-right: 20px;
+}
+
+.Box_2 {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.about_p {
+  color: black;
+  font-size: 1.1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about_button,
+.Resume {
+  background-color: blue;
+  margin-top: 10px;
+  width: 100px;
+  height: 45px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.about_button a,
+.Resume a {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+.about_button:hover,
+.Resume:hover {
+  background-color: aqua;
+}
+
+a:hover {
+  color: black;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(/image/background.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Intro Video */
+.intro_Video {
+  width: 90%;
+  max-width: 350px;
+  height: auto;
+  margin-right: 0;
+  border-radius: 20px;
+}
+
+/* Social Icons */
+.icon {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.social_icon {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  background-color: #f0f4f8;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social_icon:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+#Instagram:hover,
+#YouTube:hover {
+  background-color: rgb(130, 24, 24);
+}
+
+#LinkedIn:hover {
+  background-color: rgb(13, 100, 207);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about_button,
+  .Resume {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .about_header h1 {
+    font-size: 2rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .hi {
+    font-size: 1.2rem;
+  }
+
+  .Box_2 {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about_header h1 {
+    font-size: 1.6rem;
+  }
+
+  .Image_Dp {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .hi {
+    font-size: 1rem;
+  }
+
+  .about_button,
+  .Resume {
+    width: 90%;
+    height: 40px;
+  }
+
+  .about_button a,
+  .Resume a {
+    font-size: 1rem;
+  }
+}
